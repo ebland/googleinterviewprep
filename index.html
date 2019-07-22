@@ -1,0 +1,16 @@
+<html>
+<head>
+<script>
+var req = new XMLHttpRequest();
+req.open('GET', document.location, false);
+req.send(null);
+var headers = req.getAllResponseHeaders().toLowerCase();
+alert(headers);
+
+function var1() {
+document.getElementById('text').innerHTML = headers;
+}
+window.onLoad = var1();
+
+</script>
+</head>
