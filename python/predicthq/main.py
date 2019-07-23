@@ -1,7 +1,5 @@
 from predicthq import Client
 from collections import OrderedDict
-# from client import Client
-import client
 import config
 import requests
 import urllib
