@@ -13,20 +13,13 @@ function var1() {
 window.onLoad = var1();
 
 </script>
-<script>
-function listCookies() {
-    var theCookies = document.cookie.split(';');
-    var aString = '';
-    for (var i = 1 ; i <= theCookies.length; i++) {
-        aString += i + ' ' + theCookies[i-1] + "\n";
-    }
-    return aString;
-}
-console.log(listCookies());
-</script>
 </head>
+<script>
+Const banCreateCookie= document.getElementById(“btnCreateCookie”)
+Cookie.addEventListener(“click”, e=> document.cookie = “elizabethbland=7”)
+</script>
 <body>
-
+<button id=‘btnCreateCookie’>Create Cookie</button>
 <div id = "text">
 </div>
 </body>
